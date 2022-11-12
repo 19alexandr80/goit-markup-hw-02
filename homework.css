@@ -45,7 +45,9 @@ ul {
 .topline-nav-ul a:hover, 
 .topline-nav-ul a:focus,
 .topline-contakts a:hover,
-.topline-contakts a:focus {
+.topline-contakts a:focus,
+.basement-link:hover,
+.basement-link:focus {
     color: var(--accent-color);
 }
 .hero {
