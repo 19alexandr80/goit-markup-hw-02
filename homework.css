@@ -36,9 +36,11 @@ ul {
 }
 .topline-nav a {
     color: var(--title-text-color);
+    text-decoration: none;
 }
 .topline-contakts a {
     color: var(--text-color);
+    text-decoration: none;
 }
 .topline-nav-ul a:hover, 
 .topline-nav-ul a:focus,
