@@ -12,9 +12,9 @@
 }
 
 body {
-    width: 1600px;
     color: var(--title-text-color);
     font-family: Roboto, sans-serif;
+    background-color: var(--white);
 }
 .logo span {
     color: var(--accent-color);
@@ -24,23 +24,31 @@ body {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
-    /*line-height: 1.19px;*/
+    line-height: 1.19px;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
-ul {
+.off-style {
     list-style: none;
 }
 .topline {
     background-color: var(--white);
 }
-.topline-nav a {
+.topline-nav li>a {
     color: var(--title-text-color);
     text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .topline-contakts a {
     color: var(--text-color);
     text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .topline-nav-ul a:hover, 
 .topline-nav-ul a:focus,
@@ -53,21 +61,20 @@ ul {
 .hero {
     color: var(--white);
     background-color: var(--background-hero);
-    padding: 200px;
+    padding: 200px 0px;
     text-align: center;
 }
 .hero button {
-    width: 215px;
-    height: 50px;
     color: var(--white);
     background-color: var(--accent-color);
-    border-width: 0px;
-    border-radius: 3px;
+    border: none;
+    border-radius: 4px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 .hero h1 {
     font-weight: 900;
@@ -75,17 +82,27 @@ ul {
     line-height: 1.36;
     letter-spacing: 0.06em;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .peculiarities {
-    background-color: var(--background-section);
+    /*background-color: var(--background-section);*/
 }
 .peculiarities p,
 .team p {
     color: var(--text-color);
-    font-weight: 400;
     letter-spacing: 0.03em;
 }
 .peculiarities h3 {
-    /*font-weight: 700;*/
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -96,11 +113,10 @@ ul {
     line-height: 1.71;
 }
 .our_work {
-    background-color: var(--background-section);
+    /*background-color: var(--background-section);*/
 }
 .our_work h2,
 .team h2 {
-    /*font-weight: 700;*/
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -121,12 +137,9 @@ ul {
 }
 .basement {
     background-color: var(--background-hero);
-    height: 250px;
 }    
 .basement p {    
     color: var(--white);
-    /*font-family: inherit;*/
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -148,7 +161,7 @@ address {
 
 /*Портфолио*/
 .portfolio {
-    background-color: var(--background-section);
+    /*background-color: var(--background-section);*/
 }
 .filter-button {
     color: var(--title-text-color);
@@ -159,9 +172,9 @@ address {
     letter-spacing: 0.03em;
     background-color: var(--background-team);
     border-radius: 4px;
-    border: 0px;
-    margin: 5px;
+    border: none;
     padding: 6px 22px;
+    cursor: pointer;
 }
 .filter-button:hover,
 .filter-button:focus {
