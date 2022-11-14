@@ -137,6 +137,7 @@ body {
 }
 .basement {
     background-color: var(--background-hero);
+    padding: 60px 0px;
 }    
 .basement p {    
     color: var(--white);
