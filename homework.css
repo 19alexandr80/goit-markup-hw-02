@@ -289,7 +289,7 @@ address {
 
 /*Портфолио*/
 .portfolio {
-    width: 1200px;
+    width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -340,11 +340,16 @@ address {
 .portfolio-cards{
     display: flex;
     flex-wrap: wrap;
+    width: 1200px;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding-left: 0;
 }
-.portfolio-cards .portfolio-cards-list:not(:last-child) {
+.portfolio-cards-list {
     margin-right: 30px;
+}
+.portfolio-cards-list:nth-child(3n) {
+    margin-right: 0px;
 }
 .portfolio-cards p {
     margin-top: 0px;
@@ -362,7 +367,7 @@ address {
     /*outline: 2px solid tomato;*/
     padding-bottom: 20px;
 }
-.portfolio ul {
+.filter {
     padding-left: 0px;
 }
 .portfolio-cards-content {
